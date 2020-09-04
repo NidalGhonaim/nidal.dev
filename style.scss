@@ -1,3 +1,7 @@
+@import 'variables';
+@import 'typography';
+@import 'links';
+
 body {
-    background-color: red;
+    margin: $size--xl $size--fn;
 }

@@ -1,0 +1,27 @@
+// Typography
+$font-family--primary: 'Gothic A1', sans-serif;
+
+// Colors
+$color--base: #000;
+$color--fade: rgba(0, 0, 0, 0.5);
+$color--primary: #3078C5;
+$color--secondary: #49626E;
+$color--accent: #D3D8DE;
+$color--good: #B2E87D;
+$color--uncertain: #F7E06E;
+$color--danger: #E61E1E;
+
+// Size
+$size--s: 0.375rem; // 6
+$size--m: 0.75rem; // 12
+$size-fs: 0.875rem; // 14
+$size--fn: 1rem; // 16
+$size--fl: 1.125rem; // 18
+$size--l: 1.5rem; // 24
+$size--xl: 2.25rem; // 36
+
+// font-weights
+$weight--regular: 400;
+$weight--medium: 500;
+$weight--bold: 700;
+$weight--black: 900;
