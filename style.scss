@@ -1,7 +1,9 @@
+@import 'reset';
+@import 'normalize';
 @import 'variables';
 @import 'typography';
 @import 'links';
 
-body {
-    margin: $size--xl $size--fn;
+* {
+	box-sizing: border-box;
 }
