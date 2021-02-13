@@ -8,6 +8,15 @@ body {
   max-width: 1440px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+  margin-top: $size-l;
+  mix-blend-mode: multiply;
+}
+
 @media only screen and (max-width: 786px) {
   body {
     margin: $size-xl auto;
@@ -62,6 +71,7 @@ body {
 .signiture {
   justify-self: center;
   width: 128px;
+  mix-blend-mode: normal;
 }
 
 
@@ -85,11 +95,11 @@ body {
   border-right: 1px solid #646267;
   background: linear-gradient(
     90deg,
-    hsl(240, 1%, 94%) 0%,
-    hsl(240, 1%, 94%) 66%,
-    hsl(264, 4%, 75%) 98%,
-    hsl(264, 4%, 80%) 99%,
-    hsl(264, 4%, 75%) 100%,
+    hsl(240, 1%, 96%) 0%,
+    hsl(240, 1%, 96%) 66%,
+    hsl(264, 4%, 85%) 98%,
+    hsl(264, 4%, 90%) 99%,
+    hsl(264, 4%, 85%) 100%,
   );
   box-shadow: 
     -1px 0 0 0 hsl(264, 3%, 98%),
@@ -121,36 +131,36 @@ body {
   border-left: 1px solid #646267;
   background: linear-gradient(
     90deg,
-    #89878c 0%,
-    hsl(252, 0%, 90%) 1%,
-    hsl(252, 0%, 96%) 5%,
-    hsl(252, 2%, 80%) 50%,
-    hsl(255, 4%, 77%) 100%,
+    hsl(264, 2%, 64%) 0%,
+    hsl(252, 0%, 92%) 1%,
+    hsl(252, 0%, 98%) 5%,
+    hsl(252, 2%, 94%) 50%,
+    hsl(255, 4%, 90%) 100%,
   );
   box-shadow: 
-    1px 0 0 0 hsl(264, 3%, 68%),
-    2px 0 0 0 hsl(264, 3%, 63%),
-    3px 0 0 0 hsl(264, 3%, 64%),
-    4px 0 0 0 hsl(264, 3%, 64%),
-    6px 0 0 0 hsl(264, 3%, 62%),
-    10px 0 0 0 hsl(264, 3%, 63%),
-    12px 0 0 0 hsl(264, 3%, 61%),
-    15px 0 0 0 hsl(264, 3%, 63%),
-    16px 0 0 0 hsl(264, 3%, 61%),
-    17px 0 0 0 hsl(264, 3%, 67%),
-    18px 0 0 0 hsl(264, 3%, 71%),
-    21px 0 0 0 hsl(264, 3%, 62%),
-    22px 0 0 0 hsl(264, 3%, 61%),
-    23px 0 0 0 hsl(264, 3%, 61%),
-    24px 0 0 0 hsl(264, 3%, 70%),
-    25px 0 0 0 hsl(264, 3%, 66%),
-    29px 0 0 0 hsl(264, 3%, 64%),
-    30px 0 0 0 hsl(264, 3%, 67%),
-    32px 0 0 0 hsl(264, 4%, 74%),
-    33px 0 0 0 hsl(264, 3%, 70%),
-    34px 0 0 0 hsl(264, 3%, 62%),
-    35px 0 0 0 hsl(264, 3%, 63%),
-    36px 0 0 0 hsl(266, 4%, 63%),
-    20px 14px 50px 10px #00000045;
+    1px 0 0 0 hsl(264, 3%, 88%),
+    2px 0 0 0 hsl(264, 3%, 83%),
+    3px 0 0 0 hsl(264, 3%, 84%),
+    4px 0 0 0 hsl(264, 3%, 84%),
+    6px 0 0 0 hsl(264, 3%, 82%),
+    10px 0 0 0 hsl(264, 3%, 83%),
+    12px 0 0 0 hsl(264, 3%, 81%),
+    15px 0 0 0 hsl(264, 3%, 83%),
+    16px 0 0 0 hsl(264, 3%, 81%),
+    17px 0 0 0 hsl(264, 3%, 87%),
+    18px 0 0 0 hsl(264, 3%, 91%),
+    21px 0 0 0 hsl(264, 3%, 82%),
+    22px 0 0 0 hsl(264, 3%, 81%),
+    23px 0 0 0 hsl(264, 3%, 81%),
+    24px 0 0 0 hsl(264, 3%, 90%),
+    25px 0 0 0 hsl(264, 3%, 86%),
+    29px 0 0 0 hsl(264, 3%, 84%),
+    30px 0 0 0 hsl(264, 3%, 97%),
+    32px 0 0 0 hsl(264, 4%, 94%),
+    33px 0 0 0 hsl(264, 3%, 90%),
+    34px 0 0 0 hsl(264, 3%, 82%),
+    35px 0 0 0 hsl(264, 3%, 83%),
+    36px 0 0 0 hsl(266, 4%, 83%),
+    20px 14px 50px 10px hsla(0, 0%, 0%, 0.271);
   ;
 }

@@ -398,6 +398,7 @@ template {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
   font-weight: 900;
+  margin-top: 24px;
   margin-bottom: 8px;
 }
 
@@ -416,6 +417,8 @@ p {
 a {
   font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
   color: #000;
+  margin-top: 16px;
+  display: inline-block;
 }
 
 * {
@@ -427,6 +430,15 @@ body {
   background: #e8e8e8;
   margin: 72px auto;
   max-width: 1440px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+  margin-top: 24px;
+  mix-blend-mode: multiply;
 }
 
 @media only screen and (max-width: 786px) {
@@ -500,6 +512,7 @@ body {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 128px;
+  mix-blend-mode: normal;
 }
 
 .pages {
@@ -524,8 +537,8 @@ body {
 .page-left {
   margin-left: 36px;
   border-right: 1px solid #646267;
-  background: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(66%, #f0f0f0), color-stop(98%, #bfbdc2), color-stop(99%, #cccace), to(#bfbdc2));
-  background: linear-gradient(90deg, #f0f0f0 0%, #f0f0f0 66%, #bfbdc2 98%, #cccace 99%, #bfbdc2 100%);
+  background: -webkit-gradient(linear, left top, right top, from(whitesmoke), color-stop(66%, whitesmoke), color-stop(98%, #d8d7da), color-stop(99%, #e5e4e7), to(#d8d7da));
+  background: linear-gradient(90deg, whitesmoke 0%, whitesmoke 66%, #d8d7da 98%, #e5e4e7 99%, #d8d7da 100%);
   -webkit-box-shadow: -1px 0 0 0 #fafafa, -2px 0 0 0 #f5f4f5, -3px 0 0 0 #f7f7f8, -4px 0 0 0 #f7f7f8, -15px 0 0 0 #f5f4f5, -16px 0 0 0 #f0eff0, -17px 0 0 0 white, -18px 0 0 0 #f0eff0, -21px 0 0 0 #f2f2f3, -22px 0 0 0 #f0eff0, -23px 0 0 0 #f0eff0, -24px 0 0 0 #ededee, -25px 0 0 0 #fcfcfd, -29px 0 0 0 #f7f7f8, -30px 0 0 0 white, -32px 0 0 0 #f7f7f8, -33px 0 0 0 #ededee, -34px 0 0 0 #f2f2f3, -35px 0 0 0 #f5f4f5, -36px 0 0 0 #f5f4f5, -20px 14px 50px 10px #00000045;
           box-shadow: -1px 0 0 0 #fafafa, -2px 0 0 0 #f5f4f5, -3px 0 0 0 #f7f7f8, -4px 0 0 0 #f7f7f8, -15px 0 0 0 #f5f4f5, -16px 0 0 0 #f0eff0, -17px 0 0 0 white, -18px 0 0 0 #f0eff0, -21px 0 0 0 #f2f2f3, -22px 0 0 0 #f0eff0, -23px 0 0 0 #f0eff0, -24px 0 0 0 #ededee, -25px 0 0 0 #fcfcfd, -29px 0 0 0 #f7f7f8, -30px 0 0 0 white, -32px 0 0 0 #f7f7f8, -33px 0 0 0 #ededee, -34px 0 0 0 #f2f2f3, -35px 0 0 0 #f5f4f5, -36px 0 0 0 #f5f4f5, -20px 14px 50px 10px #00000045;
 }
@@ -533,9 +546,9 @@ body {
 .page-right {
   margin-right: 36px;
   border-left: 1px solid #646267;
-  background: -webkit-gradient(linear, left top, right top, from(#89878c), color-stop(1%, #e6e6e6), color-stop(5%, whitesmoke), color-stop(50%, #cbcbcd), to(#c3c2c7));
-  background: linear-gradient(90deg, #89878c 0%, #e6e6e6 1%, whitesmoke 5%, #cbcbcd 50%, #c3c2c7 100%);
-  -webkit-box-shadow: 1px 0 0 0 #adabb0, 2px 0 0 0 #a09ea3, 3px 0 0 0 #a3a0a6, 4px 0 0 0 #a3a0a6, 6px 0 0 0 #9e9ba1, 10px 0 0 0 #a09ea3, 12px 0 0 0 #9b999f, 15px 0 0 0 #a09ea3, 16px 0 0 0 #9b999f, 17px 0 0 0 #aaa8ad, 18px 0 0 0 #b5b3b7, 21px 0 0 0 #9e9ba1, 22px 0 0 0 #9b999f, 23px 0 0 0 #9b999f, 24px 0 0 0 #b2b0b5, 25px 0 0 0 #a8a6ab, 29px 0 0 0 #a3a0a6, 30px 0 0 0 #aaa8ad, 32px 0 0 0 #bcbabf, 33px 0 0 0 #b2b0b5, 34px 0 0 0 #9e9ba1, 35px 0 0 0 #a09ea3, 36px 0 0 0 #a09da4, 20px 14px 50px 10px #00000045;
-          box-shadow: 1px 0 0 0 #adabb0, 2px 0 0 0 #a09ea3, 3px 0 0 0 #a3a0a6, 4px 0 0 0 #a3a0a6, 6px 0 0 0 #9e9ba1, 10px 0 0 0 #a09ea3, 12px 0 0 0 #9b999f, 15px 0 0 0 #a09ea3, 16px 0 0 0 #9b999f, 17px 0 0 0 #aaa8ad, 18px 0 0 0 #b5b3b7, 21px 0 0 0 #9e9ba1, 22px 0 0 0 #9b999f, 23px 0 0 0 #9b999f, 24px 0 0 0 #b2b0b5, 25px 0 0 0 #a8a6ab, 29px 0 0 0 #a3a0a6, 30px 0 0 0 #aaa8ad, 32px 0 0 0 #bcbabf, 33px 0 0 0 #b2b0b5, 34px 0 0 0 #9e9ba1, 35px 0 0 0 #a09ea3, 36px 0 0 0 #a09da4, 20px 14px 50px 10px #00000045;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a1a5), color-stop(1%, #ebebeb), color-stop(5%, #fafafa), color-stop(50%, #f0eff0), to(#e5e4e7));
+  background: linear-gradient(90deg, #a3a1a5 0%, #ebebeb 1%, #fafafa 5%, #f0eff0 50%, #e5e4e7 100%);
+  -webkit-box-shadow: 1px 0 0 0 #e0dfe1, 2px 0 0 0 #d3d2d5, 3px 0 0 0 #d6d5d7, 4px 0 0 0 #d6d5d7, 6px 0 0 0 #d1d0d2, 10px 0 0 0 #d3d2d5, 12px 0 0 0 #cecdd0, 15px 0 0 0 #d3d2d5, 16px 0 0 0 #cecdd0, 17px 0 0 0 #dedddf, 18px 0 0 0 #e8e7e9, 21px 0 0 0 #d1d0d2, 22px 0 0 0 #cecdd0, 23px 0 0 0 #cecdd0, 24px 0 0 0 #e5e5e6, 25px 0 0 0 #dbdadc, 29px 0 0 0 #d6d5d7, 30px 0 0 0 #f7f7f8, 32px 0 0 0 #f0eff0, 33px 0 0 0 #e5e5e6, 34px 0 0 0 #d1d0d2, 35px 0 0 0 #d3d2d5, 36px 0 0 0 #d3d2d5, 20px 14px 50px 10px rgba(0, 0, 0, 0.271);
+          box-shadow: 1px 0 0 0 #e0dfe1, 2px 0 0 0 #d3d2d5, 3px 0 0 0 #d6d5d7, 4px 0 0 0 #d6d5d7, 6px 0 0 0 #d1d0d2, 10px 0 0 0 #d3d2d5, 12px 0 0 0 #cecdd0, 15px 0 0 0 #d3d2d5, 16px 0 0 0 #cecdd0, 17px 0 0 0 #dedddf, 18px 0 0 0 #e8e7e9, 21px 0 0 0 #d1d0d2, 22px 0 0 0 #cecdd0, 23px 0 0 0 #cecdd0, 24px 0 0 0 #e5e5e6, 25px 0 0 0 #dbdadc, 29px 0 0 0 #d6d5d7, 30px 0 0 0 #f7f7f8, 32px 0 0 0 #f0eff0, 33px 0 0 0 #e5e5e6, 34px 0 0 0 #d1d0d2, 35px 0 0 0 #d3d2d5, 36px 0 0 0 #d3d2d5, 20px 14px 50px 10px rgba(0, 0, 0, 0.271);
 }
 /*# sourceMappingURL=style.css.map */
