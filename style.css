@@ -396,7 +396,7 @@ template {
 }
 
 body {
-  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #131416;
 }
 
@@ -404,6 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin-top: 24px;
   margin-bottom: 8px;
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -440,7 +441,6 @@ img {
   border-radius: 2px;
   display: block;
   margin-top: 24px;
-  mix-blend-mode: multiply;
 }
 
 @media only screen and (max-width: 786px) {
@@ -537,7 +537,6 @@ img {
 }
 
 .page-left {
-  margin-left: 36px;
   border-right: 1px solid #646267;
   background: -webkit-gradient(linear, left top, right top, from(whitesmoke), color-stop(66%, whitesmoke), color-stop(98%, #d8d7da), color-stop(99%, #e5e4e7), to(#d8d7da));
   background: linear-gradient(90deg, whitesmoke 0%, whitesmoke 66%, #d8d7da 98%, #e5e4e7 99%, #d8d7da 100%);
@@ -546,11 +545,19 @@ img {
 }
 
 .page-right {
-  margin-right: 36px;
   border-left: 1px solid #646267;
   background: -webkit-gradient(linear, left top, right top, from(#a3a1a5), color-stop(1%, #ebebeb), color-stop(5%, #fafafa), color-stop(50%, #f0eff0), to(#e5e4e7));
   background: linear-gradient(90deg, #a3a1a5 0%, #ebebeb 1%, #fafafa 5%, #f0eff0 50%, #e5e4e7 100%);
   -webkit-box-shadow: 1px 0 0 0 #e0dfe1, 2px 0 0 0 #d3d2d5, 3px 0 0 0 #d6d5d7, 4px 0 0 0 #d6d5d7, 6px 0 0 0 #d1d0d2, 10px 0 0 0 #d3d2d5, 12px 0 0 0 #cecdd0, 15px 0 0 0 #d3d2d5, 16px 0 0 0 #cecdd0, 17px 0 0 0 #dedddf, 18px 0 0 0 #e8e7e9, 21px 0 0 0 #d1d0d2, 22px 0 0 0 #cecdd0, 23px 0 0 0 #cecdd0, 24px 0 0 0 #e5e5e6, 25px 0 0 0 #dbdadc, 29px 0 0 0 #d6d5d7, 30px 0 0 0 #f7f7f8, 32px 0 0 0 #f0eff0, 33px 0 0 0 #e5e5e6, 34px 0 0 0 #d1d0d2, 35px 0 0 0 #d3d2d5, 36px 0 0 0 #d3d2d5, 20px 14px 50px 10px rgba(0, 0, 0, 0.271);
           box-shadow: 1px 0 0 0 #e0dfe1, 2px 0 0 0 #d3d2d5, 3px 0 0 0 #d6d5d7, 4px 0 0 0 #d6d5d7, 6px 0 0 0 #d1d0d2, 10px 0 0 0 #d3d2d5, 12px 0 0 0 #cecdd0, 15px 0 0 0 #d3d2d5, 16px 0 0 0 #cecdd0, 17px 0 0 0 #dedddf, 18px 0 0 0 #e8e7e9, 21px 0 0 0 #d1d0d2, 22px 0 0 0 #cecdd0, 23px 0 0 0 #cecdd0, 24px 0 0 0 #e5e5e6, 25px 0 0 0 #dbdadc, 29px 0 0 0 #d6d5d7, 30px 0 0 0 #f7f7f8, 32px 0 0 0 #f0eff0, 33px 0 0 0 #e5e5e6, 34px 0 0 0 #d1d0d2, 35px 0 0 0 #d3d2d5, 36px 0 0 0 #d3d2d5, 20px 14px 50px 10px rgba(0, 0, 0, 0.271);
+}
+
+@media only screen and (max-width: 786px) {
+  .page-left {
+    border-right: none;
+  }
+  .page-right {
+    border-left: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

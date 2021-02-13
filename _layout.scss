@@ -14,7 +14,7 @@ img {
   border-radius: 2px;
   display: block;
   margin-top: $size-l;
-  mix-blend-mode: multiply;
+  // mix-blend-mode: multiply;
 }
 
 @media only screen and (max-width: 786px) {
@@ -91,7 +91,6 @@ img {
 }
 
 .page-left {
-  margin-left: 36px;
   border-right: 1px solid #646267;
   background: linear-gradient(
     90deg,
@@ -127,7 +126,6 @@ img {
 }
 
 .page-right {
-  margin-right: 36px;
   border-left: 1px solid #646267;
   background: linear-gradient(
     90deg,
@@ -163,4 +161,13 @@ img {
     36px 0 0 0 hsl(266, 4%, 83%),
     20px 14px 50px 10px hsla(0, 0%, 0%, 0.271);
   ;
+}
+
+@media only screen and (max-width: 786px) {
+  .page-left {
+    border-right: none;
+  }
+  .page-right {
+    border-left: none;
+  }
 }
