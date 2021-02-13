@@ -4,13 +4,67 @@
 
 body {
 	background: #e8e8e8;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin: $size-3xl auto;
   max-width: 1440px;
 }
+
+.cover {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  grid-gap: 1px;
+  margin-bottom: $size-xl;
+  box-shadow: -20px 14px 50px 10px #00000045;
+}
+
+.cover-face {
+  padding: $size-3xl 6vw;
+  background-color: #131416;
+  color: #F1F2F3;
+  border-radius: 2px;
+}
+
+.cover-spine {
+  border-radius: 2px;
+  background-color: #131416;
+  color: #F1F2F3;
+  padding: $size-3xl $size-s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-back {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.spine-text {
+  writing-mode: vertical-lr;
+  margin: 0;
+}
+
 @media only screen and (max-width: 786px) {
-  body {
+  .cover {
+    grid-template-columns: 5fr 1fr;
+  }
+  .cover-spine {
+    grid-row: span 2;
+  }
+}
+
+.signiture {
+  justify-self: center;
+  width: 128px;
+}
+
+
+.pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 786px) {
+  .pages {
     grid-template-columns: 1fr;
     grid-gap: $size-xl;
   }
