@@ -5,7 +5,13 @@
 body {
 	background: #e8e8e8;
   margin: $size-3xl auto;
-  max-width: 1280px;
+  max-width: 1168px;
+}
+
+@media only screen and (max-width: 786px) {
+  body {
+    margin: $size-xl auto;
+  }
 }
 
 img {
@@ -13,13 +19,11 @@ img {
   height: auto;
   border-radius: 2px;
   display: block;
-  // mix-blend-mode: multiply;
 }
 
-@media only screen and (max-width: 786px) {
-  body {
-    margin: $size-xl auto;
-  }
+.img-logo {
+  width: 256px;
+  margin: 36px auto;
 }
 
 .cover {
@@ -93,7 +97,7 @@ img {
   border-right: 1px solid #646267;
   background: linear-gradient(
     90deg,
-    hsl(240, 1%, 96%) 0%,
+    hsl(240, 1%, 94%) 0%,
     hsl(240, 1%, 96%) 66%,
     hsl(264, 4%, 85%) 98%,
     hsl(264, 4%, 90%) 99%,

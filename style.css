@@ -432,7 +432,13 @@ a {
 body {
   background: #e8e8e8;
   margin: 72px auto;
-  max-width: 1280px;
+  max-width: 1168px;
+}
+
+@media only screen and (max-width: 786px) {
+  body {
+    margin: 36px auto;
+  }
 }
 
 img {
@@ -442,10 +448,9 @@ img {
   display: block;
 }
 
-@media only screen and (max-width: 786px) {
-  body {
-    margin: 36px auto;
-  }
+.img-logo {
+  width: 256px;
+  margin: 36px auto;
 }
 
 .cover {
@@ -537,8 +542,8 @@ img {
 
 .page-left {
   border-right: 1px solid #646267;
-  background: -webkit-gradient(linear, left top, right top, from(whitesmoke), color-stop(66%, whitesmoke), color-stop(98%, #d8d7da), color-stop(99%, #e5e4e7), to(#d8d7da));
-  background: linear-gradient(90deg, whitesmoke 0%, whitesmoke 66%, #d8d7da 98%, #e5e4e7 99%, #d8d7da 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(66%, whitesmoke), color-stop(98%, #d8d7da), color-stop(99%, #e5e4e7), to(#d8d7da));
+  background: linear-gradient(90deg, #f0f0f0 0%, whitesmoke 66%, #d8d7da 98%, #e5e4e7 99%, #d8d7da 100%);
   -webkit-box-shadow: -1px 0 0 0 #fafafa, -2px 0 0 0 #f5f4f5, -3px 0 0 0 #f7f7f8, -4px 0 0 0 #f7f7f8, -15px 0 0 0 #f5f4f5, -16px 0 0 0 #f0eff0, -17px 0 0 0 white, -18px 0 0 0 #f0eff0, -21px 0 0 0 #f2f2f3, -22px 0 0 0 #f0eff0, -23px 0 0 0 #f0eff0, -24px 0 0 0 #ededee, -25px 0 0 0 #fcfcfd, -29px 0 0 0 #f7f7f8, -30px 0 0 0 white, -32px 0 0 0 #f7f7f8, -33px 0 0 0 #ededee, -34px 0 0 0 #f2f2f3, -35px 0 0 0 #f5f4f5, -36px 0 0 0 #f5f4f5, -20px 14px 50px 10px #00000045;
           box-shadow: -1px 0 0 0 #fafafa, -2px 0 0 0 #f5f4f5, -3px 0 0 0 #f7f7f8, -4px 0 0 0 #f7f7f8, -15px 0 0 0 #f5f4f5, -16px 0 0 0 #f0eff0, -17px 0 0 0 white, -18px 0 0 0 #f0eff0, -21px 0 0 0 #f2f2f3, -22px 0 0 0 #f0eff0, -23px 0 0 0 #f0eff0, -24px 0 0 0 #ededee, -25px 0 0 0 #fcfcfd, -29px 0 0 0 #f7f7f8, -30px 0 0 0 white, -32px 0 0 0 #f7f7f8, -33px 0 0 0 #ededee, -34px 0 0 0 #f2f2f3, -35px 0 0 0 #f5f4f5, -36px 0 0 0 #f5f4f5, -20px 14px 50px 10px #00000045;
 }
@@ -558,5 +563,16 @@ img {
   .page-right {
     border-left: none;
   }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.gasc {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
