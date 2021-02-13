@@ -14,18 +14,6 @@ body {
   }
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-  display: block;
-}
-
-.img-logo {
-  width: 256px;
-  margin: 36px auto;
-}
-
 .cover {
   display: grid;
   grid-template-columns: 5fr 1fr 5fr;
@@ -36,14 +24,14 @@ img {
 
 .cover-face {
   padding: $size-3xl 6vw;
-  background-color: #131416;
+  background-color: $color--black;
   color: #F1F2F3;
   border-radius: 2px;
 }
 
 .cover-spine {
   border-radius: 2px;
-  background-color: #131416;
+  background-color: $color--black;
   color: #F1F2F3;
   padding: $size-3xl $size-s;
   display: grid;
@@ -71,13 +59,6 @@ img {
   }
 }
 
-.signiture {
-  justify-self: center;
-  width: 128px;
-  mix-blend-mode: normal;
-}
-
-
 .pages {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -90,19 +71,12 @@ img {
 }
 
 .page {
-  padding: $size-3xl 6vw;
+  padding: $size-3xl 4vw;
 }
 
 .page-left {
   border-right: 1px solid #646267;
-  background: linear-gradient(
-    90deg,
-    hsl(240, 1%, 94%) 0%,
-    hsl(240, 1%, 96%) 66%,
-    hsl(264, 4%, 85%) 98%,
-    hsl(264, 4%, 90%) 99%,
-    hsl(264, 4%, 85%) 100%,
-  );
+  background-color: hsl(0, 0%, 98%);
   box-shadow: 
     -1px 0 0 0 hsl(264, 3%, 98%),
     -2px 0 0 0 hsl(264, 3%, 96%),
@@ -126,44 +100,76 @@ img {
     -36px 0 0 0 hsl(266, 4%, 96%),
     -20px 14px 50px 10px #00000045;
   ;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      hsl(240, 1%, 95%) 0%,
+      hsl(240, 1%, 98%) 66%,
+      hsl(264, 4%, 85%) 98%,
+      hsl(264, 4%, 89%) 99%,
+      hsl(264, 4%, 85%) 100%,
+    );
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    pointer-events: none;
+  }
 }
 
 .page-right {
   border-left: 1px solid #646267;
-  background: linear-gradient(
-    90deg,
-    hsl(264, 2%, 64%) 0%,
-    hsl(252, 0%, 92%) 1%,
-    hsl(252, 0%, 98%) 5%,
-    hsl(252, 2%, 94%) 50%,
-    hsl(255, 4%, 90%) 100%,
-  );
+  background-color: hsl(0, 0%, 97%);
   box-shadow: 
-    1px 0 0 0 hsl(264, 3%, 88%),
-    2px 0 0 0 hsl(264, 3%, 83%),
-    3px 0 0 0 hsl(264, 3%, 84%),
-    4px 0 0 0 hsl(264, 3%, 84%),
-    6px 0 0 0 hsl(264, 3%, 82%),
-    10px 0 0 0 hsl(264, 3%, 83%),
-    12px 0 0 0 hsl(264, 3%, 81%),
-    15px 0 0 0 hsl(264, 3%, 83%),
-    16px 0 0 0 hsl(264, 3%, 81%),
-    17px 0 0 0 hsl(264, 3%, 87%),
-    18px 0 0 0 hsl(264, 3%, 91%),
-    21px 0 0 0 hsl(264, 3%, 82%),
-    22px 0 0 0 hsl(264, 3%, 81%),
-    23px 0 0 0 hsl(264, 3%, 81%),
-    24px 0 0 0 hsl(264, 3%, 90%),
-    25px 0 0 0 hsl(264, 3%, 86%),
-    29px 0 0 0 hsl(264, 3%, 84%),
-    30px 0 0 0 hsl(264, 3%, 97%),
-    32px 0 0 0 hsl(264, 4%, 94%),
-    33px 0 0 0 hsl(264, 3%, 90%),
-    34px 0 0 0 hsl(264, 3%, 82%),
-    35px 0 0 0 hsl(264, 3%, 83%),
-    36px 0 0 0 hsl(266, 4%, 83%),
+    1px 0 0 0 hsl(264, 3%, 86%),
+    2px 0 0 0 hsl(264, 3%, 81%),
+    3px 0 0 0 hsl(264, 3%, 82%),
+    4px 0 0 0 hsl(264, 3%, 82%),
+    6px 0 0 0 hsl(264, 3%, 80%),
+    10px 0 0 0 hsl(264, 3%, 81%),
+    12px 0 0 0 hsl(264, 3%, 79%),
+    15px 0 0 0 hsl(264, 3%, 81%),
+    16px 0 0 0 hsl(264, 3%, 79%),
+    17px 0 0 0 hsl(264, 3%, 85%),
+    18px 0 0 0 hsl(264, 3%, 89%),
+    21px 0 0 0 hsl(264, 3%, 80%),
+    22px 0 0 0 hsl(264, 3%, 79%),
+    23px 0 0 0 hsl(264, 3%, 79%),
+    24px 0 0 0 hsl(264, 3%, 88%),
+    25px 0 0 0 hsl(264, 3%, 84%),
+    29px 0 0 0 hsl(264, 3%, 82%),
+    30px 0 0 0 hsl(264, 3%, 95%),
+    32px 0 0 0 hsl(264, 4%, 92%),
+    33px 0 0 0 hsl(264, 3%, 88%),
+    34px 0 0 0 hsl(264, 3%, 80%),
+    35px 0 0 0 hsl(264, 3%, 81%),
+    36px 0 0 0 hsl(266, 4%, 81%),
     20px 14px 50px 10px hsla(0, 0%, 0%, 0.271);
   ;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      hsl(264, 2%, 64%) 0%,
+      hsl(252, 0%, 92%) 1%,
+      hsl(252, 0%, 98%) 5%,
+      hsl(252, 2%, 94%) 50%,
+      hsl(255, 4%, 90%) 100%,
+    );
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
 }
 
 @media only screen and (max-width: 786px) {

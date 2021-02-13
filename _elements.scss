@@ -1,0 +1,35 @@
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+}
+
+.img-logo {
+  width: 256px;
+  margin: 36px auto;
+}
+
+.signiture {
+  justify-self: center;
+  width: 128px;
+  mix-blend-mode: normal;
+}
+
+.tag {
+  font-size: 14px;
+  padding: 2px 8px;
+  border: 1px solid $color--black;
+  border-radius: 2px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.button {
+  width: 100%;
+  background-color: $color--black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: $size-m;
+}
