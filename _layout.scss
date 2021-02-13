@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #e8e8e8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: $size-3xl auto;
+  max-width: 1440px;
+}
+@media only screen and (max-width: 786px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-gap: $size-xl;
+  }
+}
+
+.page {
+  padding: $size-3xl 6vw;
+}
+
+.page-left {
+  margin-left: 36px;
+  border-right: 1px solid #646267;
+  background: linear-gradient(
+    90deg,
+    #f3f3f5 0%,
+    #f1f1f3 50%,
+    #bcb9c0 99%,
+    #89878c 100%,
+  );
+  box-shadow: 
+    -1px 0 0 0 hsl(264, 3%, 98%),
+    -2px 0 0 0 hsl(264, 3%, 93%),
+    -3px 0 0 0 hsl(264, 3%, 94%),
+    -4px 0 0 0 hsl(264, 3%, 94%),
+    -15px 0 0 0 hsl(264, 3%, 93%),
+    -16px 0 0 0 hsl(264, 3%, 91%),
+    -17px 0 0 0 hsl(264, 3%, 97%),
+    -18px 0 0 0 hsl(264, 3%, 91%),
+    -21px 0 0 0 hsl(264, 3%, 92%),
+    -22px 0 0 0 hsl(264, 3%, 91%),
+    -23px 0 0 0 hsl(264, 3%, 91%),
+    -24px 0 0 0 hsl(264, 3%, 90%),
+    -25px 0 0 0 hsl(264, 3%, 96%),
+    -29px 0 0 0 hsl(264, 3%, 94%),
+    -30px 0 0 0 hsl(264, 3%, 97%),
+    -32px 0 0 0 hsl(264, 4%, 94%),
+    -33px 0 0 0 hsl(264, 3%, 90%),
+    -34px 0 0 0 hsl(264, 3%, 92%),
+    -35px 0 0 0 hsl(264, 3%, 93%),
+    -36px 0 0 0 hsl(266, 4%, 93%),
+    -20px 14px 50px 10px #00000045;
+  ;
+}
+
+.page-right {
+  margin-right: 36px;
+  border-left: 1px solid #646267;
+  background: linear-gradient(
+    90deg,
+    #89878c 0%,
+    hsl(240, 16%, 100%) 1%,
+    hsl(250, 8%, 88%) 50%,
+    hsl(255, 4%, 82%) 100%,
+  );
+  box-shadow: 
+    1px 0 0 0 #acaaaf,
+    2px 0 0 0 #a19fa4,
+    3px 0 0 0 #a2a0a5,
+    4px 0 0 0 #a3a1a6,
+    15px 0 0 0 #a09ea3,
+    16px 0 0 0 #9c9a9f,
+    17px 0 0 0 #aaa8ad,
+    18px 0 0 0 #b5b3b8,
+    21px 0 0 0 #9e9ca1,
+    22px 0 0 0 #9c9a9f,
+    23px 0 0 0 #9b999e,
+    24px 0 0 0 #b1afb4,
+    25px 0 0 0 #a8a6ab,
+    29px 0 0 0 #a2a0a5,
+    30px 0 0 0 #aaa8ad,
+    32px 0 0 0 #bbb9be,
+    33px 0 0 0 #b2b0b5,
+    34px 0 0 0 #9d9ba0,
+    35px 0 0 0 #9f9da2,
+    36px 0 0 0 #a19ea5,
+    20px 14px 50px 10px #00000045;
+  ;
+}

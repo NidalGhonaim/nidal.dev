@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  margin-bottom: $size-xs;
+}
+
+p {
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  max-width: 75ch;
+  margin-top: $size-l;
+}
+
+.subheading {
+  font-size: 13px;
+  margin-top: $size-xs;
+}
