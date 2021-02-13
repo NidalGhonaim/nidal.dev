@@ -8,6 +8,12 @@ body {
   max-width: 1440px;
 }
 
+@media only screen and (max-width: 786px) {
+  body {
+    margin: $size-xl auto;
+  }
+}
+
 .cover {
   display: grid;
   grid-template-columns: 5fr 1fr 5fr;
@@ -62,11 +68,11 @@ body {
 .pages {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: $size-xl;
 }
 @media only screen and (max-width: 786px) {
   .pages {
     grid-template-columns: 1fr;
-    grid-gap: $size-xl;
   }
 }
 

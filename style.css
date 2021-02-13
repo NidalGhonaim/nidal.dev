@@ -413,6 +413,12 @@ p {
   margin-top: 8px;
 }
 
+a {
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  color: #26b9c9;
+  text-decoration: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -422,6 +428,12 @@ body {
   background: #e8e8e8;
   margin: 72px auto;
   max-width: 1440px;
+}
+
+@media only screen and (max-width: 786px) {
+  body {
+    margin: 36px auto;
+  }
 }
 
 .cover {
@@ -496,13 +508,13 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  row-gap: 36px;
 }
 
 @media only screen and (max-width: 786px) {
   .pages {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 36px;
   }
 }
 
