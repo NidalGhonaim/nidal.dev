@@ -395,15 +395,18 @@ template {
   display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
   font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  color: #131416;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin-top: 24px;
   margin-bottom: 8px;
 }
 
 p {
-  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   max-width: 75ch;
   margin-top: 24px;
@@ -415,7 +418,6 @@ p {
 }
 
 a {
-  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
   color: #000;
   margin-top: 16px;
   display: inline-block;
