@@ -2,7 +2,14 @@
 $font-family--primary: 'Gothic A1', sans-serif;
 
 // Colors
-$color--black: #131416;
+$color--bg: hsl(210, 4%, 98%);
+$color--primary: hsl(210, 64%, 56%);
+$color--secondary: #D6A147;
+$color--third: hsl(210, 8%, 90%);
+$color--text: hsl(210, 4%, 2%);
+
+// borders
+$border-radius: 4px;
 
 // Size
 $size-2xs: 4px;

@@ -3,180 +3,33 @@
 }
 
 body {
-	background: #f1efed;
-  margin: $size-3xl auto;
-  max-width: 1168px;
+	background: $color--bg;
+  max-width: 1024px;
+  margin: 8vw auto;
 }
 
-@media only screen and (max-width: 786px) {
-  body {
-    margin: $size-xl auto;
-  }
+.main {
+  padding: $size-xl;
+  padding-bottom: $size-3xl;
+  margin: 2vw;
+  border: 1px solid $color--third;
+  border-radius: $border-radius;
 }
 
-.cover {
-  display: grid;
-  grid-template-columns: 5fr 1fr 5fr;
-  grid-gap: 1px;
-  margin-bottom: $size-xl;
-  box-shadow: -20px 14px 50px 10px #00000045;
+section {
+  margin-left: 4vw;
 }
 
-.cover-face {
-  padding: $size-3xl 6vw;
-  background-color: $color--black;
-  color: #F1F2F3;
-  border-radius: 2px;
-}
-
-.cover-spine {
-  border-radius: 2px;
-  background-color: $color--black;
-  color: #F1F2F3;
-  padding: $size-3xl $size-s;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.cover-back {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.spine-text {
-  writing-mode: vertical-lr;
-  margin: 0;
-}
-
-@media only screen and (max-width: 786px) {
-  .cover {
-    grid-template-columns: 5fr 1fr;
-  }
-  .cover-spine {
-    grid-row: span 2;
-  }
-}
-
-.pages {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: $size-xl;
-}
-@media only screen and (max-width: 786px) {
-  .pages {
-    grid-template-columns: 1fr;
-  }
-}
-
-.page {
-  padding: $size-3xl 4vw;
-}
-
-.page-left {
-  border-right: 1px solid #646267;
-  background-color: hsl(0, 0%, 98%);
-  box-shadow: 
-    -1px 0 0 0 hsl(264, 3%, 98%),
-    -2px 0 0 0 hsl(264, 3%, 96%),
-    -3px 0 0 0 hsl(264, 3%, 97%),
-    -4px 0 0 0 hsl(264, 3%, 97%),
-    -15px 0 0 0 hsl(264, 3%, 96%),
-    -16px 0 0 0 hsl(264, 3%, 94%),
-    -17px 0 0 0 hsl(264, 3%, 100%),
-    -18px 0 0 0 hsl(264, 3%, 94%),
-    -21px 0 0 0 hsl(264, 3%, 95%),
-    -22px 0 0 0 hsl(264, 3%, 94%),
-    -23px 0 0 0 hsl(264, 3%, 94%),
-    -24px 0 0 0 hsl(264, 3%, 93%),
-    -25px 0 0 0 hsl(264, 3%, 99%),
-    -29px 0 0 0 hsl(264, 3%, 97%),
-    -30px 0 0 0 hsl(264, 3%, 100%),
-    -32px 0 0 0 hsl(264, 4%, 97%),
-    -33px 0 0 0 hsl(264, 3%, 93%),
-    -34px 0 0 0 hsl(264, 3%, 95%),
-    -35px 0 0 0 hsl(264, 3%, 96%),
-    -36px 0 0 0 hsl(266, 4%, 96%),
-    -20px 14px 50px 10px #00000045;
-  ;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      90deg,
-      hsl(240, 1%, 95%) 0%,
-      hsl(240, 1%, 98%) 66%,
-      hsl(264, 4%, 85%) 98%,
-      hsl(264, 4%, 89%) 99%,
-      hsl(264, 4%, 85%) 100%,
-    );
-    mix-blend-mode: multiply;
-    opacity: 0.8;
-    pointer-events: none;
-  }
-}
-
-.page-right {
-  border-left: 1px solid #646267;
-  background-color: hsl(0, 0%, 97%);
-  box-shadow: 
-    1px 0 0 0 hsl(264, 3%, 86%),
-    2px 0 0 0 hsl(264, 3%, 81%),
-    3px 0 0 0 hsl(264, 3%, 82%),
-    4px 0 0 0 hsl(264, 3%, 82%),
-    6px 0 0 0 hsl(264, 3%, 80%),
-    10px 0 0 0 hsl(264, 3%, 81%),
-    12px 0 0 0 hsl(264, 3%, 79%),
-    15px 0 0 0 hsl(264, 3%, 81%),
-    16px 0 0 0 hsl(264, 3%, 79%),
-    17px 0 0 0 hsl(264, 3%, 85%),
-    18px 0 0 0 hsl(264, 3%, 89%),
-    21px 0 0 0 hsl(264, 3%, 80%),
-    22px 0 0 0 hsl(264, 3%, 79%),
-    23px 0 0 0 hsl(264, 3%, 79%),
-    24px 0 0 0 hsl(264, 3%, 88%),
-    25px 0 0 0 hsl(264, 3%, 84%),
-    29px 0 0 0 hsl(264, 3%, 82%),
-    30px 0 0 0 hsl(264, 3%, 95%),
-    32px 0 0 0 hsl(264, 4%, 92%),
-    33px 0 0 0 hsl(264, 3%, 88%),
-    34px 0 0 0 hsl(264, 3%, 80%),
-    35px 0 0 0 hsl(264, 3%, 81%),
-    36px 0 0 0 hsl(266, 4%, 81%),
-    20px 14px 50px 10px hsla(0, 0%, 0%, 0.271);
-  ;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      90deg,
-      hsl(264, 2%, 64%) 0%,
-      hsl(252, 0%, 92%) 1%,
-      hsl(252, 0%, 98%) 5%,
-      hsl(252, 2%, 94%) 50%,
-      hsl(255, 4%, 90%) 100%,
-    );
-    mix-blend-mode: multiply;
-    pointer-events: none;
-  }
-}
-
-@media only screen and (max-width: 786px) {
-  .page-left {
-    border-right: none;
-  }
-  .page-right {
-    border-left: none;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    margin: 0 $size-xs;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
