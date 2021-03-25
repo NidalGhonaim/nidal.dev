@@ -470,8 +470,7 @@ body {
 }
 
 .main {
-  padding: 4vw;
-  padding-bottom: 72px;
+  padding: calc(4vw + 18px) 4vw 72px;
   margin: 4vw;
   border: 1px solid #e3e5e8;
   border-radius: 4px;
