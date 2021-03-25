@@ -475,6 +475,7 @@ body {
   margin: 4vw;
   border: 1px solid #e3e5e8;
   border-radius: 4px;
+  position: relative;
 }
 
 section {
@@ -501,11 +502,18 @@ section {
   margin-right: 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-  display: block;
+.print {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  font-weight: bold;
+  color: #3670d3;
+  padding: 12px 24px;
+  border: 1px solid #e3e5e8;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
 }
 
 .skill {
@@ -536,5 +544,14 @@ img {
 
 .mt-l {
   margin-top: 36px;
+}
+
+@media only print {
+  .print-no-border {
+    border: none;
+  }
+  .print-page-break-before {
+    page-break-before: always;
+  }
 }
 /*# sourceMappingURL=style.css.map */
