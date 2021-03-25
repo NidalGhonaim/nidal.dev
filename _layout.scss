@@ -5,13 +5,13 @@
 body {
 	background: $color--bg;
   max-width: 1024px;
-  margin: 8vw auto;
+  margin: 4vw auto;
 }
 
 .main {
-  padding: $size-xl;
+  padding: 4vw;
   padding-bottom: $size-3xl;
-  margin: 2vw;
+  margin: 4vw;
   border: 1px solid $color--third;
   border-radius: $border-radius;
 }

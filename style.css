@@ -409,6 +409,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   margin: 8px 8px 8px 0;
 }
 
+h1 span:last-child, h2 span:last-child, h3 span:last-child, h4 span:last-child, h5 span:last-child, h6 span:last-child {
+  margin-right: 0;
+}
+
 h1 {
   font-size: 36px;
   text-transform: capitalize;
@@ -428,6 +432,7 @@ h2 {
 
 h3 {
   margin-top: 24px;
+  line-height: 1.25;
 }
 
 p {
@@ -443,6 +448,11 @@ p {
   color: #050505;
 }
 
+.title {
+  margin: 0;
+  margin-right: 8px;
+}
+
 a {
   color: #478fd7;
   display: inline-block;
@@ -456,13 +466,13 @@ a {
 body {
   background: #fafafa;
   max-width: 1024px;
-  margin: 8vw auto;
+  margin: 4vw auto;
 }
 
 .main {
-  padding: 36px;
+  padding: 4vw;
   padding-bottom: 72px;
-  margin: 2vw;
+  margin: 4vw;
   border: 1px solid #e3e6e8;
   border-radius: 4px;
 }
