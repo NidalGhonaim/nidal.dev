@@ -420,7 +420,7 @@ h1 {
 
 h2 {
   font-size: 52px;
-  color: #e3e6e8;
+  color: #e3e5e8;
   margin-top: 72px;
 }
 
@@ -454,7 +454,7 @@ p {
 }
 
 a {
-  color: #478fd7;
+  color: #3670d3;
   display: inline-block;
 }
 
@@ -473,7 +473,7 @@ body {
   padding: 4vw;
   padding-bottom: 72px;
   margin: 4vw;
-  border: 1px solid #e3e6e8;
+  border: 1px solid #e3e5e8;
   border-radius: 4px;
 }
 
@@ -517,7 +517,7 @@ img {
 
 .progress {
   width: 100%;
-  background: #e3e6e8;
+  background: #e3e5e8;
   height: 6px;
   border-radius: 4px;
   display: -ms-grid;
