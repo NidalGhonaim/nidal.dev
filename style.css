@@ -550,9 +550,16 @@ section {
   color-adjust: exact !important;
 }
 
+.print-only {
+  display: none;
+}
+
 @media only print {
-  .print {
-    visibility: hidden;
+  .print-none {
+    display: none;
+  }
+  .print-only {
+    display: block;
   }
   .print-no-border {
     border: none;
