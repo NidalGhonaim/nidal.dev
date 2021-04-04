@@ -431,14 +431,14 @@ h2 {
 }
 
 h3 {
-  margin-top: 24px;
-  line-height: 1.25;
+  margin-top: 36px;
+  line-height: 1;
 }
 
 p {
   line-height: 1.32;
   max-width: 75ch;
-  margin-top: 12px;
+  margin-top: 4px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -520,6 +520,7 @@ section {
   text-transform: uppercase;
   padding: 4px;
   margin-left: 4px;
+  margin-top: 4px;
 }
 
 .progress {
