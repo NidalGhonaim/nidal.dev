@@ -482,23 +482,11 @@ section {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.flex__item {
-  margin: 0 8px;
-}
-
-.flex__item:first-child {
-  margin-left: 0;
-}
-
-.flex__item:last-child {
-  margin-right: 0;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 12px;
+  -ms-grid-columns: (136px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 136px);
 }
 
 .print {
