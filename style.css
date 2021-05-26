@@ -451,6 +451,7 @@ p {
 .title {
   margin: 0;
   margin-right: 8px;
+  line-height: 1.5;
 }
 
 a {
@@ -481,12 +482,20 @@ section {
   margin-left: 4vw;
 }
 
-.flex {
+.menu {
   display: -ms-grid;
   display: grid;
   row-gap: 12px;
   -ms-grid-columns: (136px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 136px);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .print {
